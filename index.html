@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odysseus – Die Nacht des Pferdes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="hud"></div>
+
+    <div id="loading" class="screen">
+      <h1>ODYSSEUS</h1>
+      <div class="bar"><div id="loading-bar"></div></div>
+      <p class="hint">Troja wird geladen …</p>
+    </div>
+
+    <div id="title" class="screen hidden clickable">
+      <p class="kicker">Kapitel I</p>
+      <h1>ODYSSEUS</h1>
+      <h2>Die Nacht des Pferdes</h2>
+      <p class="start">Klicken zum Starten</p>
+      <div class="chapters">
+        <button data-cp=""><span>I</span>Das Pferd</button>
+        <button data-cp="unterstadt"><span>II</span>Der Schlüssel</button>
+        <button data-cp="gate2"><span>III</span>Das Tor</button>
+        <button data-cp="tower"><span>IV</span>Deiphobos</button>
+      </div>
+      <div class="controls">
+        <div><b>W A S D</b> bewegen</div>
+        <div><b>Maus</b> umsehen</div>
+        <div><b>Shift</b> rennen</div>
+        <div><b>C</b> ducken / schleichen</div>
+        <div><b>Leertaste</b> springen, klettern</div>
+        <div><b>E</b> lautlos töten, aufheben</div>
+        <div><b>1 / 2</b> Schwert / Bogen</div>
+        <div><b>Rechte Maustaste</b> genau zielen / blocken</div>
+        <div><b>Linke Maustaste</b> halten: Bogen spannen, loslassen: schießen / schlagen</div>
+        <div><b>F</b> ausweichen</div>
+        <div><b>Esc / P</b> Pause</div>
+      </div>
+    </div>
+
+    <div id="pause" class="screen hidden clickable">
+      <h2>Pause</h2>
+      <p class="start">Klicken zum Weiterspielen</p>
+    </div>
+
+    <div id="end" class="screen hidden">
+      <p class="kicker">Troja ist gefallen</p>
+      <h2>Die Stadt brennt. Deiphobos ist gefallen. Helena kehrt zu Menelaos zurück.</h2>
+      <p class="sub">Das Heer der Achaier hält die Straßen. Für Odysseus beginnt jetzt der lange Weg nach Hause – die Odyssee.</p>
+      <p class="stats"></p>
+    </div>
+
+    <div id="fps" class="hidden"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
