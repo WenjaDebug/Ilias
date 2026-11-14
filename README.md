@@ -8,7 +8,7 @@ Gebaut mit [Three.js](https://threejs.org), TypeScript und Vite.
 
 ## Spielen
 
-**Im Browser:** <https://wenjadebug.github.io/ilias/> – Link öffnen, ins Bild klicken, fertig.
+**Im Browser:** <https://wenjadebug.github.io/Ilias/> – Link öffnen, ins Bild klicken, fertig.
 Am besten in Chrome, Edge oder Safari auf einem Computer mit Maus und Tastatur.
 
 **Auf dem eigenen Rechner:** Das Spiel braucht einen kleinen Webserver (direkt per Doppelklick auf `index.html` lädt es nicht).
