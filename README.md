@@ -8,14 +8,22 @@ Gebaut mit [Three.js](https://threejs.org), TypeScript und Vite.
 
 ## Spielen
 
-Voraussetzung: [Node.js](https://nodejs.org) 22 oder neuer.
+**Im Browser:** <https://wenjadebug.github.io/ilias/> – Link öffnen, ins Bild klicken, fertig.
+Am besten in Chrome, Edge oder Safari auf einem Computer mit Maus und Tastatur.
+
+**Auf dem eigenen Rechner:** Das Spiel braucht einen kleinen Webserver (direkt per Doppelklick auf `index.html` lädt es nicht).
+Voraussetzung ist [Node.js](https://nodejs.org) 22 oder neuer.
 
 ```bash
+git clone https://github.com/WenjaDebug/ilias.git
+cd ilias
 npm install
 npm run dev
 ```
 
-Dann im Browser (Chrome, Edge oder Safari) <http://localhost:5173> öffnen und ins Bild klicken.
+Dann <http://localhost:5173> im Browser öffnen und ins Bild klicken.
+
+Oder als fertige Version: `npm run build`, danach `npm run preview` und die angezeigte Adresse öffnen.
 
 ## Steuerung
 
